@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+.history {
+    position: relative;
+    padding: 0 !important;
+    &-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.timeline-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+    color: $header-color;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
