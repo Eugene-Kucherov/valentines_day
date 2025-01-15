@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.a54f5d7e.css",
-    "main.js": "/static/js/main.38d5e397.js",
-    "static/media/Satisfy-Regular.ttf": "/static/media/Satisfy-Regular.32a6713537cf5e1e82f2.ttf",
-    "index.html": "/index.html",
-    "main.a54f5d7e.css.map": "/static/css/main.a54f5d7e.css.map",
-    "main.38d5e397.js.map": "/static/js/main.38d5e397.js.map"
+    "main.css": "/valentines_day/static/css/main.4f3a752d.css",
+    "main.js": "/valentines_day/static/js/main.59d85cc1.js",
+    "static/media/Satisfy-Regular.ttf": "/valentines_day/static/media/Satisfy-Regular.32a6713537cf5e1e82f2.ttf",
+    "index.html": "/valentines_day/index.html",
+    "main.4f3a752d.css.map": "/valentines_day/static/css/main.4f3a752d.css.map",
+    "main.59d85cc1.js.map": "/valentines_day/static/js/main.59d85cc1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a54f5d7e.css",
-    "static/js/main.38d5e397.js"
+    "static/css/main.4f3a752d.css",
+    "static/js/main.59d85cc1.js"
   ]
 }
