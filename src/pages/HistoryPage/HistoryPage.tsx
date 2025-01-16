@@ -7,9 +7,13 @@ import {
     TimelineContent,
     TimelineDot,
 } from "@mui/lab";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
-const HistoryPage = () => {
+type HistoryPageProps = {
+    onNavigate: (pageId: string) => void;
+};
+
+const HistoryPage = ({ onNavigate }: HistoryPageProps) => {
     const events = [
         { date: "24.02.2019", description: "Mutual sympathy in Badoo" },
         { date: "16.05.2019", description: "First meeting" },
@@ -29,29 +33,38 @@ const HistoryPage = () => {
     ];
 
     return (
-        <Timeline position="alternate" className="history">
-            <img
-                src={`${process.env.PUBLIC_URL}/images/history.jpg`}
-                alt=""
-                className="history-image"
-            />
-            {events.map((event, index) => (
-                <TimelineItem
-                    key={index}
-                    className="timeline-item"
-                    style={{ animationDelay: `${index * 1}s` }}
+        <>
+            <Timeline position="alternate" className="history">
+                <img
+                    src={`${process.env.PUBLIC_URL}/images/history.jpg`}
+                    alt=""
+                    className="history-image"
+                />
+                {events.map((event, index) => (
+                    <TimelineItem
+                        key={index}
+                        className="timeline-item"
+                        style={{ animationDelay: `${index * 1}s` }}
+                    >
+                        <TimelineSeparator>
+                            <TimelineDot />
+                            {index < events.length - 1 && <TimelineConnector />}
+                        </TimelineSeparator>
+                        <TimelineContent>
+                            <Typography>{event.date}</Typography>
+                            <Typography>{event.description}</Typography>
+                        </TimelineContent>
+                    </TimelineItem>
+                ))}
+                <Button
+                    onClick={() => onNavigate("game")}
+                    variant="contained"
+                    className="history-btn"
                 >
-                    <TimelineSeparator>
-                        <TimelineDot />
-                        {index < events.length - 1 && <TimelineConnector />}
-                    </TimelineSeparator>
-                    <TimelineContent>
-                        <Typography>{event.date}</Typography>
-                        <Typography>{event.description}</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-            ))}
-        </Timeline>
+                    Love you
+                </Button>
+            </Timeline>
+        </>
     );
 };
 

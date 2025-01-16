@@ -2,7 +2,7 @@
 
 .history {
     position: relative;
-    padding: 0 !important;
+    padding: 0 0 20px 0 !important;
     &-image {
         position: absolute;
         top: 0;
@@ -10,12 +10,17 @@
         object-fit: cover;
         z-index: -1;
     }
+    &-btn {
+        align-self: center;
+        background-color: white !important;
+        color: black !important;
+    }
 }
 
 .timeline-item {
     opacity: 0;
     animation: fadeInUp 0.5s ease-out forwards;
-    color: $header-color;
+    color: white;
 }
 
 @keyframes fadeInUp {

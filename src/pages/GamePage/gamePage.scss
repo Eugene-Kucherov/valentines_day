@@ -1,0 +1,44 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-content {
+        text-align: center;
+        font-size: 30px;
+    }
+    &-btn {
+        background-color: rgb(105, 150, 218) !important;
+    }
+}
+
+.puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* Количество столбцов */
+    grid-template-rows: repeat(5, 100px); /* Количество строк */
+}
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+}
+
+.puzzle-piece:active {
+    cursor: grabbing;
+}
+
+.game-content {
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.game-content.fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.game-content.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}

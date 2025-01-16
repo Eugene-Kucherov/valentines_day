@@ -104,6 +104,16 @@ img {
     vertical-align: bottom;
 }
 
+video {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+button {
+    text-transform: none !important;
+    font-size: 20px !important;
+}
+
 @font-face {
     font-family: "Satisfy";
     src: url("../public/fonts/Satisfy-Regular.ttf") format("truetype");

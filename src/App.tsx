@@ -1,28 +1,39 @@
 import "./App.scss";
-import HistoryPage from "./pages/HistoryPage/HistoryPage";
+import React, { useState } from "react";
 import HomePage from "./pages/HomePage/HomePage";
-import { useState } from "react";
+import HistoryPage from "./pages/HistoryPage/HistoryPage";
+import GreetingPage from "./pages/GreetingPage/GreetingPage";
+import GamePage from "./pages/GamePage/GamePage";
+import DancePage from "./pages/DancePage/DancePage";
 
 const App = () => {
-    const [currentPage, setCurrentPage] = useState("home");
+    const [currentPage, setCurrentPage] = useState("greeting");
+    const [animationClass, setAnimationClass] = useState("page-enter");
 
     const handleNavigate = (pageId: string) => {
-        setCurrentPage(pageId);
+        setAnimationClass("page-exit");
+        setTimeout(() => {
+            setCurrentPage(pageId);
+            setAnimationClass("page-enter");
+        }, 1000);
     };
 
     const resolver: { [key: string]: React.ElementType } = {
+        greeting: GreetingPage,
         home: HomePage,
         history: HistoryPage,
+        game: GamePage,
+        dance: DancePage,
     };
 
     const CurrentPageComponent = resolver[currentPage];
 
     return (
-        <>
+        <div className={`page ${animationClass}`}>
             {CurrentPageComponent && (
                 <CurrentPageComponent onNavigate={handleNavigate} />
             )}
-        </>
+        </div>
     );
 };
 
