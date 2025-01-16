@@ -13,10 +13,10 @@ const GamePage = ({ onNavigate }: GamePageProps) => {
     const imageUrl = `${process.env.PUBLIC_URL}/images/game.jpg`;
 
     const [pieces, setPieces] = useState<number[]>(
-        Array.from({ length: rows * cols }, (_, i) => i)
-        // Array.from({ length: rows * cols }, (_, i) => i).sort(
-        //     () => Math.random() - 0.5
-        // )
+        // Array.from({ length: rows * cols }, (_, i) => i)
+        Array.from({ length: rows * cols }, (_, i) => i).sort(
+            () => Math.random() - 0.5
+        )
     );
 
     const [solved, setSolved] = useState(false);
