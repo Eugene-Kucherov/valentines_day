@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/valentines_day/static/css/main.67689aa3.css",
-    "main.js": "/valentines_day/static/js/main.89fe1bb7.js",
+    "main.js": "/valentines_day/static/js/main.655e05ce.js",
     "static/media/Satisfy-Regular.ttf": "/valentines_day/static/media/Satisfy-Regular.32a6713537cf5e1e82f2.ttf",
     "index.html": "/valentines_day/index.html",
     "main.67689aa3.css.map": "/valentines_day/static/css/main.67689aa3.css.map",
-    "main.89fe1bb7.js.map": "/valentines_day/static/js/main.89fe1bb7.js.map"
+    "main.655e05ce.js.map": "/valentines_day/static/js/main.655e05ce.js.map"
   },
   "entrypoints": [
     "static/css/main.67689aa3.css",
-    "static/js/main.89fe1bb7.js"
+    "static/js/main.655e05ce.js"
   ]
 }
