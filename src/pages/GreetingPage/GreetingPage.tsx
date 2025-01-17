@@ -42,9 +42,7 @@ const GreetingPage = ({ onNavigate }: GreetingPageProps) => {
             >
                 You
             </Button>
-            <p className="greeting-tip">
-                To continue please click this button.
-            </p>
+            <p className="greeting-tip">Read carefully what you click on</p>
         </div>
     );
 };
