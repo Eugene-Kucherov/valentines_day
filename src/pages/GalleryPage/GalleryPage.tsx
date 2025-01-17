@@ -55,7 +55,7 @@ const GalleryPage = ({ onNavigate }: GalleryPageProps) => {
             <Button
                 onClick={() => onNavigate("game")}
                 className="gallery-btn"
-                variant="contained"
+                variant="outlined"
             >
                 Happiness
             </Button>

@@ -5,17 +5,15 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    background-color: #000;
     &-header {
         position: absolute;
         top: 10px;
         font-size: 40px;
-        color: white;
     }
     &-btn {
         position: absolute !important;
-        background-color: white !important;
         color: black !important;
+        border: 1px solid black !important;
         bottom: 10px;
     }
 }
