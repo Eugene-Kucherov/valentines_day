@@ -13,10 +13,10 @@ const GamePage = ({ onNavigate }: GamePageProps) => {
     const imageUrl = `${process.env.PUBLIC_URL}/images/game.jpg`;
 
     const [pieces, setPieces] = useState<number[]>(
-        // Array.from({ length: rows * cols }, (_, i) => i)
-        Array.from({ length: rows * cols }, (_, i) => i).sort(
-            () => Math.random() - 0.5
-        )
+        Array.from({ length: rows * cols }, (_, i) => i)
+        // Array.from({ length: rows * cols }, (_, i) => i).sort(
+        //     () => Math.random() - 0.5
+        // )
     );
 
     const [solved, setSolved] = useState(false);
@@ -84,7 +84,7 @@ const GamePage = ({ onNavigate }: GamePageProps) => {
                 {solved ? (
                     <>
                         <p>
-                            I knew you could handle it easily.
+                            I knew you could handle it easily
                             <br />
                             Look how beautiful we are!
                         </p>
@@ -93,7 +93,7 @@ const GamePage = ({ onNavigate }: GamePageProps) => {
                             className="game-btn"
                             onClick={() => onNavigate("dance")}
                         >
-                            With love
+                            ❤
                         </Button>
                     </>
                 ) : (

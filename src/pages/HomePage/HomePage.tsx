@@ -1,6 +1,5 @@
 import "./homePage.scss";
 import { Button } from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 type HomePageProps = {
     onNavigate: (pageId: string) => void;
@@ -17,13 +16,12 @@ const HomePage = ({ onNavigate }: HomePageProps) => {
             <div className="main-content">
                 <h1 className="main-content-header">Our love story</h1>
                 <Button
-                    className="main-content-button"
+                    className="main-content-btn"
                     variant="contained"
-                    endIcon={<ArrowForwardIcon />}
                     color="secondary"
                     onClick={() => onNavigate("history")}
                 >
-                    To our fairy tale
+                    Are
                 </Button>
             </div>
         </div>

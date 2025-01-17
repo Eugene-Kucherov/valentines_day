@@ -25,6 +25,7 @@ const HistoryPage = ({ onNavigate }: HistoryPageProps) => {
         { date: "20.05.2022", description: "We have Toshik" },
         { date: "July 2022", description: "Travel to Saint Petersburg" },
         { date: "December 2022", description: "Travel to Grodno" },
+        { date: "14.05.2023", description: "Visit to the concert" },
         { date: "August 2023", description: "Travel to Braslav Lakes" },
         { date: "16.05.2024", description: "Proposal of marriage" },
         { date: "12.10.2024", description: "Our wedding" },
@@ -57,11 +58,11 @@ const HistoryPage = ({ onNavigate }: HistoryPageProps) => {
                     </TimelineItem>
                 ))}
                 <Button
-                    onClick={() => onNavigate("game")}
+                    onClick={() => onNavigate("gallery")}
                     variant="contained"
                     className="history-btn"
                 >
-                    Love you
+                    My
                 </Button>
             </Timeline>
         </>

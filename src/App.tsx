@@ -5,6 +5,7 @@ import HistoryPage from "./pages/HistoryPage/HistoryPage";
 import GreetingPage from "./pages/GreetingPage/GreetingPage";
 import GamePage from "./pages/GamePage/GamePage";
 import DancePage from "./pages/DancePage/DancePage";
+import GalleryPage from "./pages/GalleryPage/GalleryPage";
 
 const App = () => {
     const [currentPage, setCurrentPage] = useState("greeting");
@@ -22,6 +23,7 @@ const App = () => {
         greeting: GreetingPage,
         home: HomePage,
         history: HistoryPage,
+        gallery: GalleryPage,
         game: GamePage,
         dance: DancePage,
     };

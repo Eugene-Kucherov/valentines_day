@@ -38,9 +38,9 @@ const GreetingPage = ({ onNavigate }: GreetingPageProps) => {
             <Button
                 onClick={handlePlayMusic}
                 variant="contained"
-                className="greeting-button"
+                className="greeting-btn"
             >
-                Love
+                You
             </Button>
             <p className="greeting-tip">
                 To continue please click this button.
